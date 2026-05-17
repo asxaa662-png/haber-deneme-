@@ -31,7 +31,7 @@ def haber_metni_cek(url):
         return None
 
 def senaryo_uret(haber_metni, format_secimi):
-    model = genai.GenerativeModel("gemini-1.5-flash-latest")
+    model = genai.GenerativeModel(model-name="models/gemini-1.5-flash")
     
     if format_secimi == "Tek Sunucu":
         prompt = f"Aşağıdaki haberi, samimi bir dille aktaran tek kişilik bir podcast konuşmasına çevir. Sadece metni döndür:\n\n{haber_metni}"
